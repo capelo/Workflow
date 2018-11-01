@@ -25,7 +25,6 @@ public class WorkflowServiceTest {
     @Autowired
     private WorkflowController workflowController;
 
-
     @Before
     public void setup(){
         workflowController.load("json/test.json");

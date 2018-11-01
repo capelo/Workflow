@@ -35,7 +35,7 @@ public class WorkflowExecution extends Thread implements Serializable {
         this.id = id;
     }
 
-    public void stepIncrement() {
+    private void stepIncrement() {
         step++;
     }
 
@@ -56,7 +56,7 @@ public class WorkflowExecution extends Thread implements Serializable {
     @Override
     public void run() {
 
-        while(step < workflow.getSteps()) {
+        while(step <= workflow.getSteps()) {
             System.out.println("WorkflowExecution: "+workflow.getId()+ " step: "+ step);
 
             //Simulating a process
