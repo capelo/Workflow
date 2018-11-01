@@ -1,4 +1,4 @@
-# Tray.io interview task
+# Workflow simulation task
 
 ## Introduction
 
